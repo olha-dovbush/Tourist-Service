@@ -20,7 +20,7 @@ export const Button = styled.button`
   }
 
   ${(props) =>
-    props.version === 'PRIMARY' &&
+    props.version === 'Primary' &&
     css`
       border: 4px solid ${COLORS.LightSeaGreen};
       background-color: ${COLORS.LightSeaGreen};
@@ -37,8 +37,8 @@ export const Button = styled.button`
     `};
 
   ${(props) =>
-    props.version === 'PRIMARY' &&
-    props.size === 'SMALL' &&
+    props.version === 'Primary' &&
+    props.size === 'Small' &&
     css`
       padding: 10px 11px;
       border-radius: 28px;
@@ -47,8 +47,8 @@ export const Button = styled.button`
     `};
 
   ${(props) =>
-    props.version === 'PRIMARY' &&
-    props.size === 'MEDIUM' &&
+    props.version === 'Primary' &&
+    props.size === 'Medium' &&
     css`
       padding: 6px 33px;
       border-radius: 24px;
@@ -57,8 +57,8 @@ export const Button = styled.button`
     `};
 
   ${(props) =>
-    props.version === 'PRIMARY' &&
-    props.size === 'BIG' &&
+    props.version === 'Primary' &&
+    props.size === 'Big' &&
     css`
       padding: 18px 35px;
       border-radius: 40px;
@@ -67,7 +67,7 @@ export const Button = styled.button`
     `};
 
   ${(props) =>
-    props.version === 'SECONDARY' &&
+    props.version === 'Secondary' &&
     css`
       border: 2px solid ${COLORS.LightSeaGreen};
       background-color: ${COLORS.LightSeaGreen};
@@ -107,7 +107,7 @@ export const Button = styled.button`
     `}
 
   ${(props) =>
-    props.version === 'GRADIENT' &&
+    props.version === 'Gradient' &&
     css`
       width: 100%;
       background: linear-gradient(90deg, #ff9d4b 9.15%, #fa126c 101.52%);
@@ -122,6 +122,45 @@ export const Button = styled.button`
 
       &:hover {
         background: linear-gradient(90deg, #ffcc4b 9.15%, #fa123d 101.52%);
+      }
+    `}
+  
+  ${(props) =>
+    props.version === 'Ghost' &&
+    css`
+      width: 100%;
+      border-radius: 40px;
+      border: 2px solid ${COLORS.GRAY.Gainsboro};
+      color: ${COLORS.GRAY.CadetGray};
+      font-size: 18px;
+      line-height: 27px;
+      background-color: ${COLORS.White};
+      transition: all 300ms ease-out;
+      padding: 12px 0;
+
+      &:hover {
+        background-color: ${COLORS.GRAY.Gainsboro};
+        color: ${COLORS.GRAY.CadetGray};
+      }
+    `}
+  
+  ${(props) =>
+    props.version === 'Outline' &&
+    css`
+      border-radius: 40px;
+      background-color: ${COLORS.White};
+      border: 1px solid ${COLORS.LightSeaGreen};
+      color: ${COLORS.LightSeaGreen};
+      padding: 20px 38px;
+      letter-spacing: -0.38px;
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      transition: all 300ms ease-out;
+
+      &:hover {
+        background-color: ${COLORS.LightSeaGreen};
+        color: ${COLORS.White};
+        border-color: ${COLORS.White};
       }
     `}
 `;

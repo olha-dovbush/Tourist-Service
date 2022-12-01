@@ -19,16 +19,16 @@ export function Button(props) {
 
 Button.defaultProps = {
   type: 'button',
-  onClick: () => {},
+  size: 'Medium',
   isDisabled: false,
-  size: 'MEDIUM',
+  onClick: undefined,
 };
 
 Button.propTypes = {
   type: PropTypes.string,
   onClick: PropTypes.func,
   children: PropTypes.node.isRequired,
-  version: PropTypes.string.isRequired,
-  size: PropTypes.string,
+  version: PropTypes.oneOf(['Primary', 'Secondary', 'Gradient', 'Ghost', 'Outline']).isRequired,
+  size: PropTypes.oneOf(['Small', 'Medium', 'Big']),
   isDisabled: PropTypes.bool,
 };
