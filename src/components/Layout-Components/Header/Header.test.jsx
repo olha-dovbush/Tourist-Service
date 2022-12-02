@@ -9,8 +9,6 @@ describe('Header Component', () => {
         <Header />
       </BrowserRouter>
     );
-    screen.debug();
-    // expect(screen.getAllByRole('link')).toHaveLength(5);
-    // expect(screen.getByRole('img', { name: 'logo' })).toHaveAttribute('src', 'logo.png');
+    expect(screen.getAllByRole('link')).toHaveLength(6);
   });
 });

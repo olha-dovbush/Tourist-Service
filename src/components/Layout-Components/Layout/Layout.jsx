@@ -5,7 +5,9 @@ import { Container } from '../Container/Container';
 export function Layout() {
   return (
     <>
-      <Container />
+      <Container>
+        <Header />
+      </Container>
 
       <Outlet />
     </>

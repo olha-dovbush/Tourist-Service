@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 
-import { Layout } from './components/layout/Layout/Layout';
+import { Layout } from './components/Layout-Components/Layout/Layout';
 import { RootErrorBoundary } from './pages/error/RootErrorBoundary';
 import { Home } from './pages/home/Home';
 
