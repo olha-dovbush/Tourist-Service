@@ -1,3 +1,4 @@
+import { BrowserRouter } from 'react-router-dom';
 import { Logo } from './Logo';
 
 export default {
@@ -6,9 +7,11 @@ export default {
 };
 
 const Template = (args) => (
-  <div style={{ width: 'max-content', marginTop: '50px' }}>
-    <Logo {...args} />
-  </div>
+  <BrowserRouter>
+    <div style={{ width: 'max-content', marginTop: '50px' }}>
+      <Logo {...args} />
+    </div>
+  </BrowserRouter>
 );
 
 export const HeaderLogo = Template.bind({});
