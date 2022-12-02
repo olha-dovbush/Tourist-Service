@@ -2,10 +2,9 @@ import { useRouteError } from 'react-router-dom';
 
 import { Container, Spacer, Button } from '../../components';
 
-import ErrorImg from '../../assets/features/ron_weasley_with_broken_wand.jpg';
-import * as Styled from './RootErrorBoundary.style';
+import * as Styled from './ErrorPage.style';
 
-export function RootErrorBoundary() {
+export function ErrorPage() {
   const error = useRouteError();
   console.log(error);
 

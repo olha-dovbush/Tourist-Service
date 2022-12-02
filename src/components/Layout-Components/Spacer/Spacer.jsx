@@ -1,7 +1,7 @@
 import { PropTypes } from 'prop-types';
 import styled from 'styled-components';
 
-import { QUERIES } from '../../common/constants/style.constants';
+import { QUERIES } from '../../../common/constants/style.constants';
 
 const StyledSpacer = styled.div`
   margin-bottom: ${({ space }) => `${space.desktop / 16}rem`};

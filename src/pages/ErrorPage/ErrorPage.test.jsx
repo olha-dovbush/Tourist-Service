@@ -2,13 +2,13 @@ import { fireEvent, render, waitFor, screen } from '@testing-library/react';
 import { BrowserRouter, createMemoryRouter, RouterProvider } from 'react-router-dom';
 import userEvent from '@testing-library/user-event';
 import { Layout } from '../../components/layout/Layout/Layout';
-import { RootErrorBoundary } from './RootErrorBoundary';
+import { ErrorPage } from './RootErrorBoundary';
 
 const routes = [
   {
     path: '/',
     element: <Layout />,
-    errorElement: <RootErrorBoundary />,
+    errorElement: <ErrorPage />,
   },
 ];
 

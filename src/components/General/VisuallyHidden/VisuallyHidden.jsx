@@ -5,6 +5,7 @@ import styled from 'styled-components';
 export const VisuallyHidden = ({ children, ...delegated }) => {
   const [forceShow, setForceShow] = React.useState(false);
 
+  // eslint-disable-next-line consistent-return
   React.useEffect(() => {
     if (process.env.NODE_ENV !== 'production') {
       const handleKeyDown = (ev) => {
