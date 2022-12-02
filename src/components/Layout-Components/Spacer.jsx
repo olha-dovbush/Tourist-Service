@@ -20,7 +20,7 @@ export function Spacer({ space }) {
 }
 
 Spacer.propTypes = {
-  space: PropTypes.shapeOf({
+  space: PropTypes.shape({
     mobile: PropTypes.number,
     tablet: PropTypes.number,
     desktop: PropTypes.number,
