@@ -9,7 +9,9 @@ export function PagesLayout() {
         <Header />
       </Container>
 
-      <Outlet />
+      <Container>
+        <Outlet />
+      </Container>
     </>
   );
 }

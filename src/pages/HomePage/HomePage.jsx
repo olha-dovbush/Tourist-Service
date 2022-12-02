@@ -1,3 +1,6 @@
+import { MAIN_CAROUSEL } from '../../common/constants/general.constants';
+import { Carousel } from '../../components';
+
 export function HomePage() {
-  return <></>;
+  return <Carousel version="MainSlide" sliderItems={MAIN_CAROUSEL} />;
 }
