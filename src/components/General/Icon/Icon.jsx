@@ -1,8 +1,12 @@
 import { PropTypes } from 'prop-types';
 import styled from 'styled-components';
 
-export function Icon({ children, className }) {
-  return <Wrapper className={className}>{children}</Wrapper>;
+export function Icon({ children, className, ...delegated }) {
+  return (
+    <Wrapper className={className} {...delegated}>
+      {children}
+    </Wrapper>
+  );
 }
 
 Icon.defaultProps = {
