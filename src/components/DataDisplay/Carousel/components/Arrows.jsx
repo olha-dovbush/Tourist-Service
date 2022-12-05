@@ -49,7 +49,7 @@ const ArrowLeft = styled.div`
   background-repeat: no-repeat;
   border-radius: 50%;
   transition: background-color 0.2s;
-  background-color: ${COLORS.GRAY.CharlestonGreen};
+  background-color: ${COLORS.GRAY.DavysGrey};
 
   &:hover {
     background-color: ${COLORS.LightSeaGreen};

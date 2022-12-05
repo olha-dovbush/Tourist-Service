@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 import { COLORS, WEIGHT } from '../../../../../common/constants/style.constants';
-import { Arrows } from '../Arrows';
 import { Icon } from '../../../../General';
 import { ReactComponent as PaymentSVG } from '../../../../../assets/icons/Payment.svg';
 
