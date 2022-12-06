@@ -1,4 +1,4 @@
-import propTypes, { defaultProps, PropTypes } from 'prop-types';
+import { PropTypes } from 'prop-types';
 import styled from 'styled-components';
 import { containerWidth } from '../../../common/constants/style.constants';
 

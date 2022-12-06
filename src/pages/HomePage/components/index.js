@@ -1,0 +1,1 @@
+export { AvailabilityBoard } from './AvailabilityBoard';

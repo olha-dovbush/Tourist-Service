@@ -1,5 +1,4 @@
-export { Slider } from './slider/Slider';
-export { Layout, Spacer, Container, Header } from './Layout-Components';
-export { Button } from './General/Button';
-export { Icon } from './General/Icon';
-export { Spinner } from './spinner/Spinner';
+export { PagesLayout, Spacer, Container, Header } from './Layout-Components';
+export { Button, Logo, Icon, Spinner, VisuallyHidden } from './General';
+export { NavigationLink } from './Navigation';
+export { Carousel } from './DataDisplay';

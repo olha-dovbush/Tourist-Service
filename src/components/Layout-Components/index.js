@@ -1,4 +1,4 @@
 export { Spacer } from './Spacer';
-export { Layout } from './Layout/Layout';
-export { Header } from './Header/Header';
-export { Container } from './Container/Container';
+export { PagesLayout } from './PagesLayout';
+export { Header } from './Header';
+export { Container } from './Container';

@@ -1,21 +1,19 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
-
-import { Layout } from './components/Layout-Components/Layout/Layout';
-import { RootErrorBoundary } from './pages/error/RootErrorBoundary';
-import { Home } from './pages/home/Home';
+import { PagesLayout } from './components';
+import { HomePage, ErrorPage } from './pages';
 
 import { GlobalStyle } from './GlobalStyle';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Layout />,
-    errorElement: <RootErrorBoundary />,
+    element: <PagesLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
-        element: <Home />,
+        element: <HomePage />,
       },
     ],
   },

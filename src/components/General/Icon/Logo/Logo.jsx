@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { ReactComponent as LogoSVG } from '../../../../assets/icons/Logo.svg';
+import { ReactComponent as LogoSVG } from '../../../../assets/icons/home-page/Logo.svg';
 
 export function Logo() {
   return (
