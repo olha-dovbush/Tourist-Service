@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { brandColors, containerWidth } from '../../common/constants/style.constants';
+import { brandColors } from '../../common/constants/style.constants';
 
 export const ErrorWrapper = styled.div`
   height: 100vh;

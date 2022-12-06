@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { COLORS, WEIGHT, brandColors } from '../../../common/constants/style.constants';
+import { COLORS, WEIGHT } from '../../../common/constants/style.constants';
 
 export const Button = styled.button`
   cursor: pointer;

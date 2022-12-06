@@ -4,7 +4,7 @@ import { PropTypes } from 'prop-types';
 
 import { CarouselContext } from '../CarouselContext';
 import { brandColors, COLORS } from '../../../../common/constants/style.constants';
-import ArrowPNG from '../../../../assets/icons/arrow_left_carousel.png';
+import ArrowPNG from '../../../../assets/icons/home-page/arrow_left_carousel.png';
 
 export function Arrows({ version }) {
   const { changeSlide } = useContext(CarouselContext);

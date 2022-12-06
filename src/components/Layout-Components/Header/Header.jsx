@@ -1,7 +1,7 @@
 import { NavigationLink } from '../../Navigation';
 import { Icon, Logo } from '../../General';
 import { AuthorizationButtons } from './header-components';
-import { ReactComponent as SearchSVG } from '../../../assets/icons/Search.svg';
+import { ReactComponent as SearchSVG } from '../../../assets/icons/home-page/Search.svg';
 
 import * as Styled from './Header.style';
 

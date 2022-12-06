@@ -15,13 +15,11 @@ export function ErrorPage() {
   return (
     <Styled.ErrorWrapper>
       <Container>
-        <Spacer />
         <Styled.ErrorText>Something went terribly wrong!</Styled.ErrorText>
-        <Spacer />
-        <Button onClick={onReloadClick} style={{ margin: '0 auto' }}>
+        <Spacer space={{ mobile: 20, tablet: 20, desktop: 20 }} />
+        <Button version="Primary" onClick={onReloadClick} style={{ margin: '0 auto' }}>
           Try again
         </Button>
-        <Spacer />
       </Container>
     </Styled.ErrorWrapper>
   );

@@ -48,12 +48,13 @@ module.exports = {
     indent: 'off',
     'padded-block': 'off',
     'react/jsx-no-bind': 'off',
-    'react/jsx-props-no-spreading': 'warn',
+    'react/jsx-props-no-spreading': 'off',
     'operator-linebreak': 'off',
     'react/jsx-curly-newline': 'warn',
     'react/jsx-no-useless-fragment': 'warn',
     'react/jsx-indent': 'off',
     'react/function-component-definition': 'off',
-    'react/no-unescaped-entities': 'off'
+    'react/no-unescaped-entities': 'off',
+    'no-console': 'off'
   }
 };

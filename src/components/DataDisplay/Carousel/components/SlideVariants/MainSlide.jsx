@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { COLORS, WEIGHT } from '../../../../../common/constants/style.constants';
 import { Icon } from '../../../../General';
-import { ReactComponent as PaymentSVG } from '../../../../../assets/icons/Payment.svg';
+import { ReactComponent as PaymentSVG } from '../../../../../assets/icons/home-page/Payment.svg';
 
 export function MainSlide({ data }) {
   return (

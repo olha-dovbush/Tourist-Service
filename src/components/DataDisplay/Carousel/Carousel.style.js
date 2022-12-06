@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { brandColors } from '../../../common/constants/style.constants';
 
 export const Slider = styled.div`
   overflow: hidden;

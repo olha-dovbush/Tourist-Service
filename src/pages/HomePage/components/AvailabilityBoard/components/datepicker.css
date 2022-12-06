@@ -1,0 +1,37 @@
+.input-box {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.input-box svg path{
+    transition: fill 250ms;
+}
+
+.input-box:hover .input-text{
+    color: #F5A623;
+}
+
+.input-box:hover svg path{
+   fill: #F5A623;
+}
+
+.input-text {
+    font-size: 18px;
+    line-height: 20px;
+    color: #99A3AD;
+    text-decoration: underline;
+    transition: color 250ms;
+    position: relative;
+}
+
+.input-value {
+    position: absolute;
+    margin-top: 5px;
+    font-size: 12px;
+}
