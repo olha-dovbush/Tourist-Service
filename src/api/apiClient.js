@@ -1,7 +1,6 @@
-import { charactersAPI } from './charactersAPI';
+const Amadeus = require('amadeus');
 
-const API = {
-  ...charactersAPI
-};
-
-export default API;
+export const API = new Amadeus({
+  clientId: process.env.REACT_APP_AMADEUS_API_KEY,
+  clientSecret: process.env.REACT_APP_AMADEUS_API_SECRET,
+});
