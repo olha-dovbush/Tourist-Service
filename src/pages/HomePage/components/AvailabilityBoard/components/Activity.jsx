@@ -19,7 +19,7 @@ export function Activity({ activity, onActivityChange, activitiesList }) {
         />
         <datalist id="ActivityList">
           {activitiesList.map((item) => (
-            <option key={uuid()}>{item}</option>
+            <option key={uuid()}>{item.name}</option>
           ))}
         </datalist>
         <ActivitySVG />

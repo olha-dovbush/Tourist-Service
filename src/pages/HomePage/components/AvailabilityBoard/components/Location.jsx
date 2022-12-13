@@ -17,8 +17,8 @@ export function Location({ location, onLocationChange, locationsList }) {
           onChange={onLocationChange}
         />
         <datalist id="locations">
-          {locationsList.map((item) => (
-            <option key={uuid()}>{item}</option>
+          {locationsList?.map((item) => (
+            <option key={uuid()}>{item.name}</option>
           ))}
         </datalist>
         <LocationSVG />
