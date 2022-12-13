@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const basicConfig = {
-  apiBase: 'https://legacy--api.herokuapp.com/api/v1',
+  apiBase: '',
 
   async createRequest(endpoint, ...rest) {
     const options = this.createOptions(...rest);
