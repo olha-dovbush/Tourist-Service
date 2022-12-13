@@ -1,6 +1,6 @@
 const Amadeus = require('amadeus');
 
 export const API = new Amadeus({
-  clientId: 'I7ScPKX7dYQqjLwwTOknWHTbLwV8eLuz',
-  clientSecret: 'eu6dB13HHYfii0BN',
+  clientId: process.env.REACT_APP_AMADEUS_API_KEY,
+  clientSecret: process.env.REACT_APP_AMADEUS_API_SECRET,
 });
