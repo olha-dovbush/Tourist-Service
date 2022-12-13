@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
+import { API } from '../../../../api';
 import { Activity, AvailableDate, Location } from './components';
 import { VisuallyHidden } from '../../../../components';
 
@@ -8,12 +9,38 @@ import { ReactComponent as SearchSVG } from '../../../../assets/icons/home-page/
 
 export function AvailabilityBoard() {
   const [startDate, setStartDate] = useState(new Date());
+  const [location, setLocation] = useState('');
+  const [activity, setActivity] = useState('');
+  const [coordinates, setCoordinates] = useState({ latitude: '', longitude: '' });
+  const [locationsList, setLocationsList] = useState([]);
+  const [activitiesList, setActivitiesList] = useState([]);
+
+  useEffect(() => {
+    API.referenceData.locations.cities
+      .get({
+        keyword: location,
+      })
+      .then((result) => setLocationsList(result.name))
+      .catch((err) => console.error(err));
+  }, [location]);
+  //
+  // useEffect(() => {
+  //   API.shopping.activities.get({ latitude: '', longitude: '' });
+  // }, [location]);
 
   return (
     <Styled.Wrapper>
       <Styled.BoardList>
-        <Location />
-        <Activity />
+        <Location
+          location={location}
+          onLocationChange={(e) => setLocation(e.target.value)}
+          locationsList={locationsList}
+        />
+        <Activity
+          activitiesList={activitiesList}
+          activity={activity}
+          onActivityChange={(e) => setActivity(e.target.value)}
+        />
         <AvailableDate setStartDate={setStartDate} startDate={startDate} />
       </Styled.BoardList>
 

@@ -5,6 +5,7 @@ import { COLORS, WEIGHT } from '../../../../common/constants/style.constants';
 export const Wrapper = styled.article`
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: start;
   padding: 1.2rem 3.2rem;
@@ -33,20 +34,17 @@ export const BoardItem = styled.div`
     top: 15px;
     bottom: 0;
     margin: auto;
-    right: -30px;
+    right: -20px;
     background-color: ${COLORS.GRAY.Gainsboro};
   }
 `;
 
-export const Box = styled.button`
+export const Box = styled.label`
   display: flex;
   align-items: center;
-  gap: 50px;
+  justify-content: space-between;
+  gap: 10px;
   cursor: pointer;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  padding: 0;
 `;
 
 export const Title = styled.h3`
@@ -77,6 +75,21 @@ export const Text = styled.p`
   line-height: 20px;
   color: ${COLORS.GRAY.CadetGray};
   text-decoration: underline;
+`;
+
+export const TextInput = styled.input`
+  border: none;
+  font-size: 18px;
+  line-height: 20px;
+  min-width: 220px;
+  padding: 5px 10px 0 0;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration: underline;
+    color: ${COLORS.GRAY.CadetGray};
+  }
 `;
 
 export const Side = styled.div`
